@@ -1,0 +1,130 @@
+#product {
+  background-color: #f4f4f4;
+}
+#product h2 {
+  padding: 60px 0 30px 65px;
+}
+#product ul.list {
+  display: grid;
+  grid-template-rows: 260px 260px 260px;
+  grid-template-columns: 260px 260px 260px 260px;
+  gap: 10px;
+  justify-content: center;
+}
+#product ul.list li {  
+  position: relative;
+}
+#product ul.list li:nth-child(2)::after {
+  height: 585px;
+}
+#product ul.list li:nth-child(6)::after, #product ul.list li:nth-child(8)::after {
+  width: 585px;
+}
+#product ul.list li:nth-child(2) {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+}
+#product ul.list li:nth-child(5) {
+  background-image: url(../img/p5.png);
+}
+#product ul.list li:nth-child(6) {
+  grid-column: 3 / span 2;
+}
+#product ul.list li:nth-child(8) {
+  grid-column: 2 / span 2;
+}
+#product ul.list li .wrapText {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(4, 69, 244, .85);
+  width: 0%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+#product ul.list li .wrapText>*{
+  color: white;
+}
+#product ul.list li h3 {
+  color: white;
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  font-size: 30px;
+}
+#product ul.list li p {
+  line-height: 1.6;
+}
+#product ul.list li a {
+  margin-top: 20px;
+}
+
+#sns .wrap {
+  height: 280px;
+  padding-top: 40px;
+}
+#sns .wrap h2 {
+  height: 70px;
+}
+#sns .slick-dots {
+  bottom: -70px;
+}
+#sns .slick-dots li button::before { 
+  font-size: 14px;
+}
+
+.snsani li a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 15px;
+}
+.snsani li a::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  grid-row: 1 / span 2;
+}
+.snsani li.sns1 a::before {
+  background-image: url(../img/s1.png);
+}
+.snsani li.sns2 a::before {
+  background-image: url(../img/s2.png);
+}
+.snsani li.sns3 a::before {
+  background-image: url(../img/s3.png);
+}
+.snsani li.sns4 a::before {
+  background-image: url(../img/s4.png);
+}
+.snsani li.sns5 a::before {
+  background-image: url(../img/s5.png);
+}
+.snsani li.sns6 a::before {
+  background-image: url(../img/s6.png);
+}
+.snsani li.sns7 a::before {
+  background-image: url(../img/s7.png);
+}
+.snsani li.sns8 a::before {
+  background-image: url(../img/s8.jpg);
+}
+.snsani li.sns9 a::before {
+  background-image: url(../img/s9.png);
+}
+
+
+
+
+
+
+
